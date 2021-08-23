@@ -1,0 +1,43 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["prettier", "@typescript-eslint"],
+  "overrides": [
+      {
+          "files": ["*.js"],
+          "rules": {
+              "@typescript-eslint/no-var-requires": "off"
+          }
+      }
+  ],
+  "env": {
+      "node": true,
+      "browser": true,
+      "amd": true
+  },
+  "extends": [
+		"standard",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+		"plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+    "plugin:promise/recommended",
+    <%_  if (linter.includes("prettier")) { _%>
+			"prettier"
+    <%_ } _%>
+  ], 
+	"rules": {
+		<%_  if (linter.includes("prettier")) { _%>
+		"prettier/prettier": ["warn", 
+		{
+			"endOfLine": "auto",
+			"singleQuote": true,
+			"printWidth": 80,
+			"tabWidth": 2
+		}
+	]
+	<%_ } _%>
+	}
+}
