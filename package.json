@@ -2,7 +2,7 @@
   "name": "supersaas-core-plugins",
   "version": "0.0.1",
   "description": "set of plugins for the supersaas-boilerplate project",
-  "main": "prompt.js",
+  "main": "src",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --fix"
