@@ -20,12 +20,10 @@
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-		"plugin:import/errors",
-        "plugin:import/warnings",
         "plugin:import/typescript",
         "plugin:promise/recommended",
     <%_  if (linter.includes("prettier")) { _%>
-			"prettier"
+		"prettier"
     <%_ } _%>
   ], 
 	"rules": {
@@ -39,9 +37,10 @@
 		"prettier/prettier": ["warn", 
 		{
 			"endOfLine": "auto",
-			"singleQuote": true,
+            "semi": false,
+            "singleQuote": true,
 			"printWidth": 80,
-			"tabWidth": 2
+			"tabWidth": 4
 		}
 	]
 	<%_ } _%>
