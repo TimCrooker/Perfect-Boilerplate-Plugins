@@ -1,46 +1,37 @@
 const path = require('path')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
-	entry: './src/index.tsx',
-	resolve: {
-		extensions: ['.tsx', '.ts', '.js'],
-	},
-	module: {
-		rules: [
-			{
-				test: /\.tsx?$/,
-				loader: 'ts-loader',
-				exclude: /node_modules/,
-			},
-			{
-				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader',
-				},
-			},
-			{
-				test: /\.css$/,
-				use: [
-					{
-						loader: 'style-loader',
-					},
-					{
-						loader: 'css-loader',
-					},
-				],
-			},
-		],
-	},
+	mode: 'development',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/',
 		filename: 'bundle.js',
 	},
+	entry: './src/index.tsx',
+	module: {
+		rules: [
+			// typescript transpiling
+			{
+				test: /\.(ts|js)x?$/i,
+				loader: 'ts-loader',
+			},
+			// global css files
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			},
+		],
+	},
+	resolve: {
+		plugins: [new TsconfigPathsPlugin()],
+		extensions: ['.tsx', '.ts', '.js'],
+	},
 	plugins: [
-		new HtmlWebPackPlugin({
-			template: './src/index.html',
+		new HtmlWebpackPlugin({
+			template: 'src/index.html',
 		}),
 	],
+	devtool: 'inline-source-map',
 }
