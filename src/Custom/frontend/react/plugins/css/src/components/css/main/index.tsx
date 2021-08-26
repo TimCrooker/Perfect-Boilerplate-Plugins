@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./index.css";
+import "./index.css";
 import { Button } from "@/components/css";
 
 export const Main: React.FC = () => {

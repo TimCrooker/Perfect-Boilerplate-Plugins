@@ -3,7 +3,7 @@ import React from "react";
 <%_ if (features.includes("svgr")) { _%>
 import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "@/components/icons";
 <%_ } _%>
-import styles from "./index.css";
+import "./index.css";
 
 export const Footer: React.FC = () => {
 
