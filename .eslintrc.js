@@ -16,7 +16,7 @@ module.exports = {
 		ecmaVersion: 2015,
 		sourceType: 'module',
 	},
-	plugins: ['prettier', '@typescript-eslint'],
+	plugins: ['prettier', '@typescript-eslint', 'ejs'],
 	rules: {
 		// 'comma-dangle': ['error', 'always-multiline'],
 		// 'no-empty-pattern': ['off'],

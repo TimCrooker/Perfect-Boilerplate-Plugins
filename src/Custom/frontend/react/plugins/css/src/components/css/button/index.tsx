@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./index.css";
+import "./index.css";
 
 export type IButton = React.DetailedHTMLProps<
     React.AnchorHTMLAttributes<HTMLAnchorElement>,
