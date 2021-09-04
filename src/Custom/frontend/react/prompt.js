@@ -142,17 +142,17 @@ module.exports = {
 			],
 			default: 'jest',
 		},
-		// {
-		// 	name: 'e2etest',
-		// 	message: 'E2E Testing framework:',
-		// 	type: 'select',
-		// 	choices: [
-		// 		{ message: 'None', name: 'none' },
-		// 		{ message: 'Cypress', name: 'cypress' },
-		// 		{ message: 'WebdriverIO', name: 'webdriverio' },
-		// 	],
-		// 	default: 'none',
-		// },
+		{
+			name: 'e2etest',
+			message: 'E2E Testing framework:',
+			type: 'select',
+			choices: [
+				{ message: 'None', name: 'none' },
+				// { message: 'Cypress', name: 'cypress' },
+				// { message: 'WebdriverIO', name: 'webdriverio' },
+			],
+			default: 'none',
+		},
 		// {
 		// 	name: 'docker',
 		// 	message: 'Docker integration:',
