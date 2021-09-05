@@ -4,7 +4,6 @@
   "description": "set of plugins for the supersaas-boilerplate project",
   "main": "src",
   "scripts": {
-	  "dev": "",
     "test": "jest",
     "lint": "eslint --fix"
   },
@@ -38,7 +37,8 @@
   "jest": {
     "verbose": true,
     "modulePathIgnorePatterns": [
-      "src"
+      "src",
+      "dev"
     ]
   }
 }
