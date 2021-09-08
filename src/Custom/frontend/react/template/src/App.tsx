@@ -4,7 +4,7 @@
     var top = _app.wrapper.map(wrapper => wrapper[0] || "");
     var bottom = _app.wrapper.map(wrapper => wrapper[1] || "").reverse();
 %>
-import Home from "pages";
+import Home from "@/pages";
 
 
 function App(): JSX.Element {

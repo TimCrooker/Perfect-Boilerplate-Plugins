@@ -119,15 +119,13 @@ module.exports = {
 		// },
 		{
 			name: 'linter',
-			message: 'Linting tools:',
-			type: 'multiselect',
-			hint: 'use <arrow-keys> to navigate, <space> to select.',
-			pageSize: 10,
+			message: 'Linting:',
+			type: 'select',
 			choices: [
-				{ message: 'ESLint', name: 'eslint' },
-				{ message: 'Prettier', name: 'prettier' },
+				{ message: 'None', name: 'none' },
+				{ message: 'ESlint', name: 'eslint' },
 			],
-			default: [],
+			default: 'eslint',
 		},
 		{
 			name: 'testing',

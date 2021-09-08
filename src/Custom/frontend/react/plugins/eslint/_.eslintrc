@@ -22,9 +22,7 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:import/typescript",
         "plugin:promise/recommended",
-    <%_  if (linter.includes("prettier")) { _%>
 		"prettier"
-    <%_ } _%>
   ], 
 	"rules": {
 		"no-restricted-imports": [
@@ -33,7 +31,7 @@
 			"patterns": ["@/features/*/*"]
 			}
 	],
-		<%_  if (linter.includes("prettier")) { _%>
+	
 		"prettier/prettier": ["warn", 
 		{
 			"endOfLine": "auto",
@@ -43,6 +41,5 @@
 			"tabWidth": 4
 		}
 	]
-	<%_ } _%>
 	}
 }
