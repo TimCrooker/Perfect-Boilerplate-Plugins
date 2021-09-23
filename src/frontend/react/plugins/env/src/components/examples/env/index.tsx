@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const EnvExample = () => {
+export const EnvExample = (): React.ReactElement => {
 	return (
 		<div>
 			<div>REACT_APP_ENV_VARIABLE</div>

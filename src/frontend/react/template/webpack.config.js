@@ -15,12 +15,18 @@ module.exports = {
 			// typescript transpiling
 			{
 				test: /\.(ts|js)x?$/i,
+				include: path.resolve(__dirname, 'src'),
 				loader: 'ts-loader',
 			},
 			// global css files
 			{
 				test: /\.css$/i,
-				use: ['style-loader', 'css-loader'],
+				include: path.resolve(__dirname, 'src'),
+				use: ['style-loader', 'css-loader' 
+				<%_ if (ui === "tailwind") { _%> 
+					,'postcss-loader'
+				<%_ } _%>
+			],
 			},
 		],
 	},

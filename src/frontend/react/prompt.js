@@ -8,7 +8,7 @@ module.exports = {
 			choices: [
 				{ message: 'None', name: 'none' },
 				{ message: 'Tailwind CSS', name: 'tailwind' },
-				// { message: 'Bootstrap', name: 'bootstrap' },
+				{ message: 'Bootstrap', name: 'bootstrap' },
 				// { message: 'Chakra UI', name: 'chakra-ui' },
 				// { message: 'Antd', name: 'antd' },
 			],
