@@ -6,9 +6,6 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/eslint-recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:import/errors',
-		'plugin:import/warnings',
-		'plugin:import/typescript',
 		'plugin:promise/recommended',
 		'prettier',
 	],
@@ -16,14 +13,9 @@ module.exports = {
 		ecmaVersion: 2015,
 		sourceType: 'module',
 	},
-	plugins: ['prettier', '@typescript-eslint', 'ejs'],
+	plugins: ['@typescript-eslint', 'ejs', 'prettier'],
 	rules: {
-		// 'comma-dangle': ['error', 'always-multiline'],
-		// 'no-empty-pattern': ['off'],
-		// 'no-undef': ['error'],
 		'no-var': ['error'],
-		// 'object-curly-spacing': ['error', 'always'],
-		// indent: ['off'],
 		'prettier/prettier': [
 			'warn',
 			{
