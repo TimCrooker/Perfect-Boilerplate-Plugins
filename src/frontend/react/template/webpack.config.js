@@ -21,9 +21,8 @@ module.exports = {
 			// global css files
 			{
 				test: /\.css$/i,
-				include: path.resolve(__dirname, 'src'),
 				use: ['style-loader', 'css-loader' 
-				<%_ if (ui === "tailwind") { _%> 
+				<%_ if (ui === 'tailwind') { _%> 
 					,'postcss-loader'
 				<%_ } _%>
 			],
