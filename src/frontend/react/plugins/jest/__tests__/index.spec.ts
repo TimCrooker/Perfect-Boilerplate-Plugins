@@ -5,7 +5,6 @@
  * please visit https://jestjs.io/docs
  */
 
-
 describe('example test suite', () => {
 	it('unit test 1', () => {
 		const num = 5

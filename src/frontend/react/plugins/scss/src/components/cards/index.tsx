@@ -1,16 +1,16 @@
 import React from "react";
 
-import styles from "./index.module.scss";
+import "./index.scss";
 import data from "meta.json";
-import { Card } from "components/scss";
+import { Card } from "@/components";
 
 export const Cards: React.FC = () => {
     return (
-        <div className={styles.cards}>
+        <div className="cards">
             {(data?.plugins ?? []).map((plugin) => (
                 <div 
                     key={`key-${plugin.name}`} 
-                    className={styles.cardWrapper}
+                    className="cardWrapper"
                     <%_ if (testing === 'testing-library') { _%>   
                     data-testid="container"
                     <%_ } _%>

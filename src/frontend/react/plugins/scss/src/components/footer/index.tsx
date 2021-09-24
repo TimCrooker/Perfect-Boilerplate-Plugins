@@ -2,14 +2,14 @@ import React from "react";
  
     
 <%_ if (features.includes("svgr")) { _%>
-import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "components/icons";
+import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "@/components/icons";
 <%_ } _%>
-import styles from "./index.module.scss";
+import "./index.scss";
 
 export const Footer: React.FC = () => {
 
   return (
-    <div className={styles.footer}>
+    <div className="footer">
         <a 
             href="https://github.com/pankod" 
             target="_blank"
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
             <img <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> src="/icons/pankod-icon.svg" alt="pankod" width="140" height="28" />
             <%_ } _%>
         </a>
-        <div className={styles.icons} <% if (testing === 'testing-library') { %> data-testid="icons-container" <% } %> >
+        <div className="icons" <% if (testing === 'testing-library') { %> data-testid="icons-container" <% } %> >
             <a href="https://github.com/pankod" target="_blank" >
                 <%_ if (features.includes("svgr")) { _%>
                 <GithubIcon <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> color="white" width="28" height="29" />

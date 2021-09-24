@@ -20,9 +20,12 @@ module.exports = {
 			},
 			// global css files
 			{
-				test: /\.css$/i,
-				use: ['style-loader', 'css-loader' 
-				<%_ if (ui === 'tailwind') { _%> 
+				test: /\.(css|s[ac]ss)$/i,
+				use: ['style-loader', 'css-loader'
+				<%_ if (css_features.includes('scss')) { _%> 
+					,'sass-loader'
+				<%_ } _%> 
+				<%_ if (ui.includes('tailwind')) { _%> 
 					,'postcss-loader'
 				<%_ } _%>
 			],

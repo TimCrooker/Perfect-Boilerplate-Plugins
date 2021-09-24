@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./index.module.scss";
-import { Button } from "components/scss";
+import "./index.scss";
+import { Button } from "@/components";
 
 export const Main: React.FC = () => {
     return (
-        <div className={styles.main}>
+        <div className="main">
             <h1 <% if(!(e2etest === "none")) { %>  data-test="main-heading" <% } %> >superplate</h1>
             <p>
                 The frontend boilerplate with superpowers!

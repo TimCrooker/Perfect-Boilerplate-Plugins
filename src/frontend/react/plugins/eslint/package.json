@@ -1,6 +1,7 @@
 {
     "scripts": {
-      "lint": "eslint **/*.{js,jsx,ts,tsx}"
+      "lint": "eslint **/*.{js,jsx,ts,tsx}",
+			"lint:fix": "eslint **/*.{js,jsx,ts,tsx} --fix"
     },
     "devDependencies": {
 			"eslint-plugin-import": "^2.24.2",
