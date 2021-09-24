@@ -49,7 +49,7 @@ module.exports = {
 			choices: [
 				// { message: 'Fetch (next.js built-in)', name: 'fetch' },
 				// { message: 'Axios', name: 'axios' },
-				// { message: 'Storybook', name: 'storybook' },
+				{ message: 'Storybook', name: 'storybook' },
 				// { message: 'SVGR', name: 'svgr' },
 				{ message: 'Environment Variables', name: 'env' },
 				// { message: 'Reverse Proxy', name: 'reverse-proxy' },
