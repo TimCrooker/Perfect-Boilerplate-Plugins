@@ -10,19 +10,26 @@ import axios from "axios";
 
 
 const BASE_API_URL = <%- features.includes("reverse-proxy") ?
-"'/api'" : "'https://official-joke-api.appspot.com/'"
+"'/api'" : "'https://karljoke.herokuapp.com'"
 -%>;
 
-const API_URL = "/jokes/programming/random";
+const API_URL = "/jokes/random";
 
 const jokesApi = axios.create({
     baseURL: BASE_API_URL,
 });
 
-export const AxiosExample = () => {
-    const [error, setError] = useState(null);
+type Joke = {
+	id: number
+	type: string
+	setup: string
+	punchline: string
+}
+
+export const AxiosExample = (): React.ReactElement => {
+    const [error, setError] = useState<null | { message: string }>(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [data, setData] = useState([]);
+    const [data, setData] = useState<Joke[]>([]);
 
     // Note: the empty deps array [] means
     // this useEffect will run once

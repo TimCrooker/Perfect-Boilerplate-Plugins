@@ -48,7 +48,7 @@ module.exports = {
 			pageSize: 2,
 			choices: [
 				// { message: 'Fetch (next.js built-in)', name: 'fetch' },
-				// { message: 'Axios', name: 'axios' },
+				{ message: 'Axios', name: 'axios' },
 				{ message: 'Storybook', name: 'storybook' },
 				// { message: 'SVGR', name: 'svgr' },
 				{ message: 'Environment Variables', name: 'env' },
