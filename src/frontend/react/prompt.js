@@ -29,17 +29,17 @@ module.exports = {
 			],
 			default: 'css',
 		},
-		// {
-		// 	name: 'styled_specific',
-		// 	message: 'Do you also want to add styled-system ?',
-		// 	type: 'select',
-		// 	choices: [
-		// 		{ message: 'None', name: 'none' },
-		// 		{ message: 'styled-system', name: 'styled-system' },
-		// 	],
-		// 	skip: ({ answers }) => answers.css_features !== 'styled-components',
-		// 	default: 'none',
-		// },
+		{
+			name: 'styled_specific',
+			message: 'Do you also want to add styled-system ?',
+			type: 'select',
+			choices: [
+				{ message: 'None', name: 'none' },
+				{ message: 'styled-system', name: 'styled-system' },
+			],
+			skip: ({ answers }) => answers.css_features !== 'styled-components',
+			default: 'none',
+		},
 		{
 			name: 'features',
 			message: 'Features:',
@@ -71,20 +71,20 @@ module.exports = {
 		// 	],
 		// 	default: 'none',
 		// },
-		// {
-		// 	name: 'state-management',
-		// 	message: 'State Management:',
-		// 	type: 'select',
-		// 	pageSize: 3,
-		// 	choices: [
-		// 		{ message: 'None', name: 'none' },
-		// 		{ message: 'Redux + Redux Toolkit', name: 'redux' },
-		// 		{ message: 'Recoil', name: 'recoil' },
-		// 		{ message: 'MobX', name: 'mobx' },
-		// 		{ message: 'Zustand', name: 'zustand' },
-		// 	],
-		// 	default: 'none',
-		// },
+		{
+			name: 'state-management',
+			message: 'State Management:',
+			type: 'select',
+			pageSize: 3,
+			choices: [
+				{ message: 'None', name: 'none' },
+				{ message: 'Redux + Redux Toolkit', name: 'redux' },
+				// { message: 'Recoil', name: 'recoil' },
+				// { message: 'MobX', name: 'mobx' },
+				// { message: 'Zustand', name: 'zustand' },
+			],
+			default: 'none',
+		},
 		// {
 		// 	name: 'mobx_state_tree',
 		// 	message: 'Do you want to use Mobx State Tree ?',
@@ -120,10 +120,11 @@ module.exports = {
 		{
 			name: 'linter',
 			message: 'Linting:',
-			type: 'select',
+			type: 'multiselect',
 			choices: [
 				{ message: 'None', name: 'none' },
 				{ message: 'ESlint', name: 'eslint' },
+				{ message: 'StyleLint', name: 'stylelint' },
 			],
 			default: 'eslint',
 		},

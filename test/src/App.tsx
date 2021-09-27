@@ -1,17 +1,13 @@
-import "@/styles/global.css"
+import '@/styles/global.css'
 
-import Home from "pages";
-
+import Home from 'pages'
 
 function App(): JSX.Element {
-    
-    return (
-        
-        <div className="App">
-            <Home />
-        </div>
-         
-      );
-};
+	return (
+		<div className="App">
+			<Home />
+		</div>
+	)
+}
 
-export default App;
+export default App

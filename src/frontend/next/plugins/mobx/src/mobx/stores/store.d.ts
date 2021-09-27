@@ -1,5 +1,5 @@
-import { ICounter } from "./counter/counter";
+import { ICounter } from './counter/counter'
 
 export interface IRoot {
-    counterStore: ICounter;
+	counterStore: ICounter
 }

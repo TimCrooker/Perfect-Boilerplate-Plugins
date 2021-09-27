@@ -1,13 +1,13 @@
 const base = {
-    _app: {
-        import: ['import "@styles/global.scss"'],
-        inner: [],
-        wrapper: [],
-    },
-};
+	_app: {
+		import: ['import "@styles/global.scss"'],
+		inner: [],
+		wrapper: [],
+	},
+}
 
 module.exports = {
-    extend() {
-        return base;
-    },
-};
+	extend() {
+		return base
+	},
+}

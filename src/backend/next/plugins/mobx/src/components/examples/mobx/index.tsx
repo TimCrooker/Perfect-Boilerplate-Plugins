@@ -1,5 +1,5 @@
-import { observer } from "mobx-react";
-import { useRootStore } from "@mobx";
+import { observer } from 'mobx-react'
+import { useRootStore } from '@mobx'
 
 /**
  * This component is provided as an example usage of MobX in components
@@ -9,33 +9,24 @@ import { useRootStore } from "@mobx";
  */
 
 export const MobxExample: React.FC = observer(() => {
-    const { counterStore } = useRootStore();
-    const { count, increase, decrease } = counterStore;
+	const { counterStore } = useRootStore()
+	const { count, increase, decrease } = counterStore
 
-    return (
-        <div>
-            <div>
-                <h2>Counter</h2>
-                <button
-                    type="button"
-                    onClick={increase}
-                >
-                    +
-                </button>
-                <span>{count}</span>
-                <button
-                    type="button"
-                    onClick={decrease}
-                >
-                    -
-                </button>
-            </div>
-            <a
-                href="https://mobx.js.org"
-                target="_blank"
-            >
-                Go To Documentation
-            </a>
-        </div>
-    );
-});
+	return (
+		<div>
+			<div>
+				<h2>Counter</h2>
+				<button type="button" onClick={increase}>
+					+
+				</button>
+				<span>{count}</span>
+				<button type="button" onClick={decrease}>
+					-
+				</button>
+			</div>
+			<a href="https://mobx.js.org" target="_blank">
+				Go To Documentation
+			</a>
+		</div>
+	)
+})

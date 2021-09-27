@@ -1,28 +1,26 @@
-import React from "react";
+import React from 'react'
 
-import { createRootStore } from "./stores";
+import { createRootStore } from './stores'
 
 const StoreContext = React.createContext<
-    ReturnType<typeof createRootStore> | undefined
->(undefined);
+	ReturnType<typeof createRootStore> | undefined
+>(undefined)
 
 export const RootStoreProvider = ({
-    children,
+	children,
 }: {
-    children: React.ReactNode;
+	children: React.ReactNode
 }) => {
-    const root = createRootStore();
+	const root = createRootStore()
 
-    return (
-        <StoreContext.Provider value={root}>{children}</StoreContext.Provider>
-    );
-};
+	return <StoreContext.Provider value={root}>{children}</StoreContext.Provider>
+}
 
 export const useRootStore = () => {
-    const context = React.useContext(StoreContext);
-    if (context === undefined) {
-        throw new Error("useRootStore must be used within RootStoreProvider");
-    }
+	const context = React.useContext(StoreContext)
+	if (context === undefined) {
+		throw new Error('useRootStore must be used within RootStoreProvider')
+	}
 
-    return context;
-};
+	return context
+}

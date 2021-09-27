@@ -13,5 +13,5 @@ const base = {
 module.exports = {
 	extend() {
 		return base
-  }
+	},
 }

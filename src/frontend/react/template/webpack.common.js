@@ -3,13 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
-	mode: 'development',
+	entry: './src/index.tsx',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		publicPath: '/',
 		filename: 'bundle.js',
 	},
-	entry: './src/index.tsx',
 	module: {
 		rules: [
 			// typescript transpiling
@@ -17,6 +16,14 @@ module.exports = {
 				test: /\.(ts|js)x?$/i,
 				include: path.resolve(__dirname, 'src'),
 				loader: 'ts-loader',
+			},
+			// loads files and images
+			{
+				test: /\.(jpe?g|png|gif|svg)$/i,
+				loader: 'file-loader',
+				options: {
+					name: '[path][name].[ext]',
+				},
 			},
 			// global css files
 			{
@@ -41,5 +48,4 @@ module.exports = {
 			template: 'src/index.html',
 		}),
 	],
-	devtool: 'inline-source-map',
 }

@@ -1,11 +1,11 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux'
 
-import counter from "redux/slices/counter";
+import counter from 'redux/slices/counter'
 
-import {store} from "./store"
+import { store } from './store'
 
-const rootReducer = combineReducers({ counter });
+const rootReducer = combineReducers({ counter })
 
-export type RootState = ReturnType<typeof store.getState>;
+export type RootState = ReturnType<typeof store.getState>
 
-export default rootReducer;
+export default rootReducer

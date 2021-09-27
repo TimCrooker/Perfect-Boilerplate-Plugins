@@ -1,8 +1,8 @@
 module.exports = {
-    client: {
-        service: {
-            name: "SpaceX",
-            url: "https://api.spacex.land/graphql/",
-        },
-    },
-};
+	client: {
+		service: {
+			name: 'SpaceX',
+			url: 'https://api.spacex.land/graphql/',
+		},
+	},
+}

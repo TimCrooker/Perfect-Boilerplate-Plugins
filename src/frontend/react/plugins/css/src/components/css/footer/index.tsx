@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
 
   return (
     <div className="footer">
-        <a 
+        		<a 
             href="https://github.com/pankod" 
             target="_blank"
             <%_ if (testing === 'testing-library') { _%>   
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
                 <%_ if (features.includes("svgr")) { _%>
                 <LinkedinIcon <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> color="white" width="28" height="32" />
                 <%_ } else { _%>
-                <img <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> src="/icons/linkedin-icon.svg" alt="linkedin" width="28" height="32" />
+                <img <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> src="./icons/linkedin-icon.svg" alt="linkedin" width="28" height="32" />
                 <%_ } _%>
             </a>
         </div>

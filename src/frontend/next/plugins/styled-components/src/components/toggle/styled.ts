@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const ToggleContainer = styled.button<{ themeName: string }>`
   background: ${({ theme }) => theme.colors.gradient};
@@ -30,13 +30,14 @@ export const ToggleContainer = styled.button<{ themeName: string }>`
     
     // sun icon
     &:first-child {
-      transform: ${({ themeName }) => (themeName === "light" ? 'translateY(0)' : 'translateY(100px)')};
+      transform: ${({ themeName }) =>
+				themeName === 'light' ? 'translateY(0)' : 'translateY(100px)'};
     }
     
     // moon icon
     &:nth-child(2) {
-      transform: ${({ themeName }) => (themeName === "light" ? 'translateY(-100px)' : 'translateY(0)')};
+      transform: ${({ themeName }) =>
+				themeName === 'light' ? 'translateY(-100px)' : 'translateY(0)'};
     }
   }
-`;
-
+`

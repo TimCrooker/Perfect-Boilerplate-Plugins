@@ -9,6 +9,7 @@ type CardProps = {
 export const Card: React.FC<CardProps> = ({ title, children }) => {
 	return (
 		<div className="card">
+			<%_ if (features.includes("svgr")) {}%>
 			<div className="header">{title}</div>
 			<div>{children}</div>
 		</div>

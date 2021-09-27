@@ -1,6 +1,6 @@
-import { makeAutoObservable } from "mobx";
+import { makeAutoObservable } from 'mobx'
 
-import { ICounter } from "./counter";
+import { ICounter } from './counter'
 
 /**
  * This file is generated as an example of Mobx Stores
@@ -10,17 +10,17 @@ import { ICounter } from "./counter";
  */
 
 export class CounterStore implements ICounter {
-    count = 0;
+	count = 0
 
-    constructor() {
-        makeAutoObservable(this);
-    }
+	constructor() {
+		makeAutoObservable(this)
+	}
 
-    increase = () => {
-        this.count++;
-    };
+	increase = () => {
+		this.count++
+	}
 
-    decrease = () => {
-        this.count--;
-    };
+	decrease = () => {
+		this.count--
+	}
 }
