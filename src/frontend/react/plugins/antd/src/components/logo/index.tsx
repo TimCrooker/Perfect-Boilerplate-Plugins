@@ -1,7 +1,7 @@
 import React from "react";
 
 <%_ if (features.includes("svgr")) { _%>
-import { ReactIcon } from "components/icons";
+import { ReactIcon } from "@/components/icons";
 <%_ } _%>
 
 export const Logo: React.FC = () => {

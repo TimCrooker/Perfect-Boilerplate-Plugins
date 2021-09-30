@@ -4,7 +4,7 @@ import { CardProps } from 'antd/lib/card'
 
 export const Card: React.FC<CardProps> = ({ title, children, ...rest }) => {
 	return (
-		<AntdCard title={title} bordered={false}>
+		<AntdCard title={title} bordered={false} {...rest}>
 			{children}
 		</AntdCard>
 	)

@@ -1,6 +1,5 @@
-
 <%_ if (testing === 'enzyme') {_%>
-import mount from "test/mount";
+import mount from "@/test/mount";
 <%_ } _%>
 
 import { Button } from "./index";

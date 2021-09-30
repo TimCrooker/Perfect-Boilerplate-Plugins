@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React, { ReactElement } from "react";
 import {
-    render as baseRender,
+    render,
     RenderOptions,
-    RenderResult,
 } from "@testing-library/react";
 <% var testSetup = typeof testSetup === "undefined" ? {} : testSetup %>
 <%- testSetup ? testSetup.import ? testSetup.import.join("\n") : "" : "" %>
@@ -20,7 +20,7 @@ import {
  * please visit https://testing-library.com/docs/react-testing-library/setup
  */
 
-export const AllTheProviders = ({ children }) => {
+export const AllTheProviders: React.FC = ({ children }) => {
     <%- testSetup ? testSetup.inner ? testSetup.inner.join("\n") : "" : "" %>
 
     return (
@@ -32,11 +32,11 @@ export const AllTheProviders = ({ children }) => {
     );
 };
 
-const render = (ui: ReactElement, options?: Omit<RenderOptions, "queries">) =>
-    baseRender(ui, { wrapper: AllTheProviders, ...options }) as RenderResult;
+const customRender = (ui: ReactElement, options?: Omit<RenderOptions, "wrapper">) =>
+    render(ui, { wrapper: AllTheProviders, ...options })
 
 // re-export everything
 export * from "@testing-library/react";
 
 // override render method
-export { render };
+export { customRender as render };

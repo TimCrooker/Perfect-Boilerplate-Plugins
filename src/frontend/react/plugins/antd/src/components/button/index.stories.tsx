@@ -9,9 +9,11 @@ export default {
 	decorators: [withKnobs],
 }
 
-export const Basic = () => <Button type="primary">Submit</Button>
+export const Basic = (): React.ReactElement => (
+	<Button type="primary">Submit</Button>
+)
 
-export const DynamicVariables = () => {
+export const DynamicVariables = (): React.ReactElement => {
 	const label = text('label', 'Submit')
 	const type = select(
 		'type',

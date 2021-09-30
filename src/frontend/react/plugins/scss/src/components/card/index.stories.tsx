@@ -9,7 +9,7 @@ export default {
 	decorators: [withKnobs],
 }
 
-export const DynamicVariables = () => {
+export const DynamicVariables = (): React.ReactElement => {
 	const label = select('title', ['Title 1', 'Title 2'], 'Title Test')
 	return (
 		<div style={{ width: '25%' }}>

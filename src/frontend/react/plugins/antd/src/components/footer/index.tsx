@@ -8,7 +8,7 @@ import {
 } from "@ant-design/icons";
 
 <%_ if (features.includes("svgr")) { _%>
-import { PankodIcon } from "components/icons";
+import { PankodIcon } from "@/components/icons";
 <%_ } _%>
 
 export const Footer: React.FC = () => {

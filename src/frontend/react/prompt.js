@@ -122,7 +122,7 @@ module.exports = {
 			message: 'Linting:',
 			type: 'multiselect',
 			choices: [
-				{ message: 'None', name: 'none' },
+				// { message: 'None', name: 'none' },
 				{ message: 'ESlint', name: 'eslint' },
 				{ message: 'StyleLint', name: 'stylelint' },
 			],
@@ -147,22 +147,22 @@ module.exports = {
 			type: 'select',
 			choices: [
 				{ message: 'None', name: 'none' },
-				// { message: 'Cypress', name: 'cypress' },
+				{ message: 'Cypress', name: 'cypress' },
 				// { message: 'WebdriverIO', name: 'webdriverio' },
 			],
 			default: 'none',
 		},
-		// {
-		// 	name: 'docker',
-		// 	message: 'Docker integration:',
-		// 	type: 'select',
-		// 	pageSize: 3,
-		// 	choices: [
-		// 		{ message: 'None', name: 'none' },
-		// 		{ message: 'Dockerfile', name: 'Docker' },
-		// 	],
-		// 	default: 'none',
-		// },
+		{
+			name: 'docker',
+			message: 'Docker integration:',
+			type: 'select',
+			pageSize: 3,
+			choices: [
+				{ message: 'None', name: 'none' },
+				{ message: 'Dockerfile', name: 'docker' },
+			],
+			default: 'docker',
+		},
 		// {
 		// 	name: 'CI',
 		// 	message: 'Continuous integration:',
