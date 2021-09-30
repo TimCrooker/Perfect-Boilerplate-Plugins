@@ -5,7 +5,7 @@ import { GET_LAUNCHES } from './graphql'
 import {
 	GetLaunches,
 	GetLaunchesVariables,
-} from '../../../../__generated__/GetLaunches'
+} from '@/../__generated__/GetLaunches'
 
 export const GraphQLExample: React.FC = () => {
 	const { data, loading, error } = useQuery<GetLaunches, GetLaunchesVariables>(
