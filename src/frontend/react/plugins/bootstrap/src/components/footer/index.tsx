@@ -1,6 +1,6 @@
 import React from "react";
 <%_ if (features.includes("svgr")) { _%>
-import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "components/icons";
+import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "@/components/icons";
 <%_ } _%>
 
 export const Footer: React.FC = () => {

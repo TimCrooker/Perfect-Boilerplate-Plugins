@@ -1,5 +1,5 @@
 <%_ if (testing === 'testing-library') { _%>
-import { fireEvent, render } from "@test";
+import { fireEvent, render } from "@/test";
 <%_ } else if (testing === 'enzyme') {_%>
 import mount from "@test/mount";
 <%_ } _%>

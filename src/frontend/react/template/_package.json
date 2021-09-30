@@ -4,8 +4,8 @@
     "private": true,
 		"scripts": {
 			"dev": "webpack-dev-server --open --config webpack.dev.js --hot",
-			"start": "yarn build && npx webpack serve --config webpack.prod.js --hot",
-			"build": "rimraf ./dist && webpack --open --config webpack.prod.js",
+			"start": "npm run build && http-server ./dist",
+			"build": "webpack build --config webpack.prod.js",
 			"test": "jest"
 	  },
 	  "dependencies": {
@@ -31,7 +31,8 @@
 			"ts-jest": "^27.0.5",
 			"ts-node": "^10.2.1",
 			"identity-obj-proxy": "^3.0.0",
-			"isomorphic-unfetch": "^3.1.0"
+			"isomorphic-unfetch": "^3.1.0",
+			"http-server": "^13.0.2"
 	  }
   }
 

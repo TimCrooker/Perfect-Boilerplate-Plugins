@@ -79,6 +79,7 @@ module.exports = {
 			choices: [
 				{ message: 'None', name: 'none' },
 				{ message: 'Redux + Redux Toolkit', name: 'redux' },
+				{ message: 'Apollo GraphQL', name: 'apollo-graphql' },
 				// { message: 'Recoil', name: 'recoil' },
 				// { message: 'MobX', name: 'mobx' },
 				// { message: 'Zustand', name: 'zustand' },
@@ -148,7 +149,6 @@ module.exports = {
 			choices: [
 				{ message: 'None', name: 'none' },
 				{ message: 'Cypress', name: 'cypress' },
-				// { message: 'WebdriverIO', name: 'webdriverio' },
 			],
 			default: 'none',
 		},
