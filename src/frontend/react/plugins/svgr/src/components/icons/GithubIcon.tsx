@@ -1,6 +1,8 @@
 import * as React from 'react'
 
-function SvgGithubIcon(props: React.SVGProps<SVGSVGElement>) {
+function SvgGithubIcon(
+	props: React.SVGProps<SVGSVGElement>
+): React.ReactElement {
 	return (
 		<svg
 			aria-hidden="true"

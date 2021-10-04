@@ -6,7 +6,7 @@ import {
 	YoutubeIcon,
 	ReactIcon,
 	PankodIcon,
-} from 'components/icons'
+} from '@/components/icons'
 
 export const SvgrExample: React.FC = () => {
 	return (

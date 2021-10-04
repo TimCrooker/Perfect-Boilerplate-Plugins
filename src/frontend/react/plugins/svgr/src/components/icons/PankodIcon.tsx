@@ -1,6 +1,8 @@
 import * as React from 'react'
 
-function SvgPankodIcon(props: React.SVGProps<SVGSVGElement>) {
+function SvgPankodIcon(
+	props: React.SVGProps<SVGSVGElement>
+): React.ReactElement {
 	return (
 		<svg
 			width="1em"

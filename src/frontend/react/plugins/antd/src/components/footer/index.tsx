@@ -11,6 +11,11 @@ import {
 import { PankodIcon } from "@/components/icons";
 <%_ } _%>
 
+<% const twitterUrl = "https://github.com/pankod/superplate"; %>
+<% const githubUrl = "https://github.com/pankod/superplate"; %>
+<% const linkedinurl = "https://github.com/pankod/superplate"; %>
+<% const youtubeUrl = "https://github.com/pankod/superplate"; %>
+
 export const Footer: React.FC = () => {
     const iconStyle: CSSProperties = {
         fontSize: 22,
@@ -34,7 +39,7 @@ export const Footer: React.FC = () => {
                 <%_ } _%>
                 <Space align="center" size="middle" <% if (testing === 'testing-library') { %> data-testid="icons-container" <% } %> >
                     <a
-                        href="https://github.com/pankod"
+                        href=<%= githubUrl %>
                         target="_blank"
                         <%_ if (testing === 'testing-library') { _%>   
                         data-testid="pankod-logo"
@@ -44,21 +49,21 @@ export const Footer: React.FC = () => {
                         <GithubOutlined <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %>/>
                     </a>
                     <a
-                        href="https://twitter.com/PankodDev"
+                        href=<%= twitterUrl %>
                         target="_blank"
                         style={iconStyle}
                     >
                         <TwitterOutlined <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %>/>
                     </a>
                     <a
-                        href="https://www.youtube.com/channel/UCBGOeQkv1XW3ptryLWlQbAQ"
+                        href=<%= youtubeUrl %>
                         target="_blank"
                         style={iconStyle}
                     >
                         <YoutubeOutlined <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %>/>
                     </a>
                     <a
-                        href="https://www.linkedin.com/company/pankod-yazilim-ve-danismanlik/"
+                        href=<%= linkedinUrl %>
                         target="_blank"
                         style={iconStyle}
                     >

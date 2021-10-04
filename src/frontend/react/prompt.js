@@ -50,7 +50,7 @@ module.exports = {
 				// { message: 'Fetch (next.js built-in)', name: 'fetch' },
 				{ message: 'Axios', name: 'axios' },
 				{ message: 'Storybook', name: 'storybook' },
-				// { message: 'SVGR', name: 'svgr' },
+				{ message: 'SVGR', name: 'svgr' },
 				{ message: 'Environment Variables', name: 'env' },
 				// { message: 'Reverse Proxy', name: 'reverse-proxy' },
 				// { message: 'Bundle Analyzer', name: 'bundle-analyzer' },

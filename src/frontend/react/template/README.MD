@@ -29,7 +29,7 @@ superplate is a Next.js all-in-one project generator. Create your project with t
 
 ## Learn More
 
-To learn more about **superplate**, please check out the [Documentation](<%- docsUrl %>).
+To learn more about **perfectplate**, please check out the [Documentation](<%- docsUrl %>).
 
 <% for (var i = 0; i < pluginsData.length; i++ ) { %>
 ### **<%= pluginsData[i].name %>**

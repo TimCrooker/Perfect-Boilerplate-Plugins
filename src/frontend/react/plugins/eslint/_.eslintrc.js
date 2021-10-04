@@ -11,7 +11,7 @@ module.exports = {
 		ecmaVersion: 2015,
 		sourceType: 'module',
 	},
-	plugins: ['prettier', '@typescript-eslint'],
+	plugins: ['@typescript-eslint', 'prettier'],
 	rules: {
 		'@typescript-eslint/no-var-requires': 0,
 		'no-var': ['error'],

@@ -1,6 +1,8 @@
 import * as React from 'react'
 
-function SvgLinkedinIcon(props: React.SVGProps<SVGSVGElement>) {
+function SvgLinkedinIcon(
+	props: React.SVGProps<SVGSVGElement>
+): React.ReactElement {
 	return (
 		<svg
 			aria-hidden="true"

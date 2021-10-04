@@ -11,7 +11,7 @@ export const Main: React.FC = () => {
         >
             <Container>
                 <h1 <% if(!(e2etest === "none")) { %>  data-test="main-heading" <% } %> className="display-2 text-white">
-                    superplate
+                    Perfectplate
                 </h1>
                 <p className="lead text-white">
                     The frontend boilerplate with superpowers!
