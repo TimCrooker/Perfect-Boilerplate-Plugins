@@ -163,17 +163,17 @@ module.exports = {
 			],
 			default: 'docker',
 		},
-		// {
-		// 	name: 'CI',
-		// 	message: 'Continuous integration:',
-		// 	type: 'select',
-		// 	choices: [
-		// 		{ message: 'None', name: 'none' },
-		// 		{ message: 'GitHub Actions', name: 'github-actions' },
-		// 		{ message: 'Travis', name: 'travis' },
-		// 	],
-		// 	default: 'none',
-		// },
+		{
+			name: 'CI',
+			message: 'Continuous integration:',
+			type: 'select',
+			choices: [
+				{ message: 'None', name: 'none' },
+				{ message: 'GitHub Actions', name: 'github-actions' },
+				// { message: 'Travis', name: 'travis' },
+			],
+			default: 'none',
+		},
 	],
 	ignores: [
 		{
