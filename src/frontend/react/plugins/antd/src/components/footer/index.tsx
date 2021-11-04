@@ -11,10 +11,10 @@ import {
 import { PankodIcon } from "@/components/icons";
 <%_ } _%>
 
-<% const twitterUrl = "https://github.com/pankod/superplate"; %>
-<% const githubUrl = "https://github.com/pankod/superplate"; %>
-<% const linkedinurl = "https://github.com/pankod/superplate"; %>
-<% const youtubeUrl = "https://github.com/pankod/superplate"; %>
+<% const twitterUrl = "https://github.com/pankod/superplate" %>
+<% const githubUrl = "https://github.com/pankod/superplate" %>
+<% const linkedinurl = "https://github.com/pankod/superplate" %>
+<% const youtubeUrl = "https://github.com/pankod/superplate" %>
 
 export const Footer: React.FC = () => {
     const iconStyle: CSSProperties = {
